@@ -1,38 +1,554 @@
-.App {
-  text-align: center;
+@font-face {
+  font-family: "IRANSans";
+  src: local("IRANSans"), url(./fonts/IRANSansWeb_Light.eot) format("eot");
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+@font-face {
+  font-family: "IRANSans";
+  src: local("IRANSans"), url(./fonts/IRANSansWeb_Light.woff2) format("woff2");
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+@font-face {
+  font-family: "IRANSans";
+  src: local("IRANSans"), url(./fonts/IRANSansWeb_Medium.woff2) format("woff2");
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+@font-face {
+  font-family: "IRANSans";
+  src: local("IRANSans"), url(./fonts/IRANSansWeb.woff2) format("woff2");
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: IRANSans, "sans-serif";
+}
+
+.header {
+  width: 483.2px;
+  height: 79px;
+  padding: 15px 10px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.header-button {
+  width: 483.2px;
+  height: 36px;
+  display: flex;
+  margin-top: 7px;
+}
+
+.btn-login {
+  width: 63.5px;
+  height: 36px;
+  margin-left: 10px;
+  font-size: 12px;
+  text-decoration: none;
+  border-radius: 5px;
+  background: #2585ff;
+  border: 1px solid #2585ff;
+  font-family: IRANSans, "sans-serif";
+}
+
+.toggle {
+  color: #727272;
+  margin: -2px 6px 0px;
+}
+
+.Bitbarglogo-svg {
+  width: 72px;
+  height: 42px;
+  margin: 7px 11.2px 0px 0px;
+}
+
+.container {
+  width: 483.2px;
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.container-title {
+  width: 483.2px;
+  height: 56px;
+  background: #3590ff;
+  padding: 14px;
+}
+
+.container h1 {
+  color: #fff;
+  font-size: 18px;
+  padding: 0px 6px;
+  font-weight: 300;
+}
+
+.main-container {
+  width: 469.2px;
+  margin: 16px 0px;
+  background-color: #fff;
+  border-radius: 7px;
+  box-shadow: 0 2px 8px rgb(0 0 0 / 10%);
+}
+
+.form1 {
+  display: flex;
+  padding: 10px;
+}
+
+.input-box {
+  width: 362.68px;
+  height: 32px;
+  padding: 0px 8px;
+  align-items: center;
+  line-height: 1.6;
+  border: 1px solid #e6e8ea;
+  border-radius: 4px;
+  display: flex;
+}
+
+.query-svg {
+  width: 22px;
+  height: 22px;
+  color: #848e9c;
+}
+
+.btn-search {
+  font-size: 12px;
+  width: 66.5px;
+  height: 32px;
+  margin: 0px 10px;
+  padding: 5px 14px;
+  border-radius: 5px;
+  background: #2585ff;
+  border: 1px solid #2585ff;
+  color: #fff;
+  box-shadow: 0 4px 8px 0 rgb(0 0 0 / 18%);
+}
+
+.txt-query {
+  font-size: 11px;
+  color: #afafaf;
+  padding: 0px 1.4px;
+}
+
+.main-container p {
+  font-size: 12px;
+  padding: 10px;
+  color: #8c8686;
+}
+
+.main-container p span {
+  color: #2485ff;
+  border-bottom: 1px dashed;
+}
+
+.title-table {
+  display: flex;
+  background-color: #fafafa;
+  padding: 16px 0px;
+}
+
+.sharp {
+  width: 37.53px;
+  font-size: 12px;
+  text-align: center;
+  color: #afafaf;
+}
+
+.currency {
+  width: 168.9px;
+  font-size: 12px;
+  padding: 0px 46px 0px 0px;
+}
+
+.buy {
+  width: 168.9px;
+  font-size: 12px;
+}
+
+.sell {
+  width: 93.84px;
+  font-size: 12px;
+  text-align: center;
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  padding: 10px 0px;
+  border-top: 1px solid;
+  border-color: #eaecef;
+}
+
+.currency-id {
+  width: 37.5px;
+  text-align: center;
+  color: #afafaf;
+  font-size: 14px;
+}
+
+.icons {
+  width: 40px;
+  height: 40px;
+  margin-left: 7px;
+}
+
+.currency-name-main {
+  width: 121.9px;
+  display: flex;
+  flex-direction: column;
+}
+
+.persian-name {
+  color: #333;
+  font-size: 12px;
+}
+
+.eng-name {
+  font-size: 10px;
+  color: #999;
+  margin-top: 8px;
+}
+
+.main-buy {
+  width: 168.9px;
+  display: flex;
+  flex-direction: column;
+  color: #999;
+  font-size: 9px;
+}
+
+.main-sell {
+  text-align: center;
+  width: 93.84px;
+  font-size: 9px;
+  color: #32a953;
+}
+
+.ul-next {
+  display: flex;
+  list-style-type: none;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding: 10px;
+  font-size: 14px;
 }
 
-.App-link {
-  color: #61dafb;
+.ul-next-li1 {
+  text-decoration: none;
+  color: #338af1 !important;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.ul-next-li2 {
+  text-decoration: none;
+  padding: 0px 16px;
+  color: #338af1 !important;
+}
+
+.ul-next-li3 {
+  text-decoration: none;
+  color: #338af1 !important;
+}
+
+@media only screen and (min-width: 556px) {
+  .header {
+    width: 539.2px;
   }
-  to {
-    transform: rotate(360deg);
+
+  .container {
+    width: 539.2px;
+  }
+
+  .container-title {
+    width: 539.2px;
+  }
+
+  .main-container {
+    width: 539.2px;
+  }
+
+  .input-box {
+    width: 525.2px;
+  }
+  .sharp {
+    width: 42px;
+  }
+
+  .currency {
+    width: 189px;
+  }
+
+  .buy {
+    width: 189px;
+  }
+
+  .sell {
+    width: 105px;
+  }
+
+  .currency-id {
+    width: 42px;
+  }
+
+  .currency-name-main {
+    width: 142px;
+  }
+
+  .main-buy {
+    width: 189px;
+  }
+
+  .main-sell {
+    width: 105px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .header {
+    width: 751.2px;
+    justify-content: space-between;
+  }
+
+  .container {
+    width: 751.2px;
+  }
+
+  .container-title {
+    width: 751.2px;
+  }
+
+  .main-container {
+    width: 751.2px;
+  }
+
+  .input-box {
+    width: 250px;
+  }
+
+  .sharp {
+    width: 59px;
+  }
+
+  .currency {
+    width: 265.4px;
+  }
+
+  .buy {
+    width: 265.4px;
+  }
+
+  .sell {
+    width: 147.4px;
+  }
+
+  .currency-id {
+    width: 59px;
+  }
+
+  .currency-name-main {
+    width: 218.4px;
+  }
+
+  .persian-name {
+    font-size: 14px;
+  }
+
+  .main-buy {
+    font-size: 10px;
+    width: 265.4px;
+  }
+
+  .main-sell {
+    width: 147.4px;
+    font-size: 10px;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .header {
+    width: 975.2px;
+    padding: 15px 30px;
+  }
+
+  .container {
+    width: 975.2px;
+  }
+
+  .container-title {
+    width: 975.2px;
+  }
+
+  .main-container {
+    width: 975.2px;
+  }
+
+  .sharp {
+    width: 76.9px;
+  }
+
+  .currency {
+    width: 346px;
+  }
+
+  .buy {
+    width: 346px;
+  }
+
+  .sell {
+    width: 192.2px;
+  }
+
+  .currency-id {
+    width: 76.9px;
+  }
+
+  .currency-name-main {
+    width: 299px;
+  }
+
+  .main-buy {
+    width: 346px;
+  }
+
+  .main-sell {
+    width: 192.2px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .header {
+    width: 1183.2px;
+  }
+
+  .container {
+    width: 1183.2px;
+  }
+
+  .container-title {
+    width: 1183.2px;
+  }
+
+  .main-container {
+    width: 1183.2px;
+  }
+
+  .sharp {
+    width: 93.5px;
+  }
+
+  .currency {
+    width: 420.9px;
+  }
+
+  .buy {
+    width: 420.9px;
+  }
+
+  .sell {
+    width: 233.8px;
+  }
+
+  .currency-id {
+    width: 93.5px;
+  }
+
+  .currency-name-main {
+    width: 373.9px;
+  }
+
+  .main-buy {
+    width: 420.9px;
+  }
+
+  .main-sell {
+    width: 233.8px;
+  }
+}
+
+@media only screen and (min-width: 1536px) {
+  .header {
+    width: 1519.2px;
+  }
+
+  .container {
+    width: 1519.2px;
+  }
+
+  .container-title {
+    width: 1519.2px;
+  }
+
+  .main-container {
+    width: 1266px;
+    justify-content: center;
+  }
+
+  .sharp {
+    width: 101.3px;
+  }
+
+  .currency {
+    width: 455.75px;
+  }
+
+  .buy {
+    width: 455.8px;
+  }
+
+  .sell {
+    width: 253.2px;
+  }
+
+  .currency-id {
+    width: 101.3px;
+  }
+
+  .currency-name-main {
+    width: 408.75px;
+  }
+
+  .main-buy {
+    width: 455.8px;
+  }
+
+  .main-sell {
+    width: 253.2px;
+  }
+}
+/* --------------------------------------------------------------- */
+
+.support_icon_container {
+  position: fixed;
+  left: -15px;
+  bottom: 53px;
+  width: 120px;
+  height: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.support_icon {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  background-color: white;
+  border-radius: 100%;
+}
+.support_transition {
+  animation: blow 2.5s infinite;
+  border-radius: 50%;
+  height: 10px;
+  width: 10px;
+}
+
+@keyframes blow {
+  0% {
+    background-color: #437dd3;
+    transform: scale(6);
+  }
+
+  100% {
+    transform: scale(10);
   }
 }

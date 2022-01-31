@@ -1,0 +1,182 @@
+.bit_main_container {
+    /* width: 100vw; */
+    margin: 120px auto 0 auto;
+    padding: 0 15px;
+  }
+  
+  .logo {
+    text-align: center;
+  }
+  
+  .logo img {
+    width: 272px;
+    height: 100px;
+    margin: 0 0 5px;
+  }
+  
+  .row_section {
+    display: flex;
+    padding: 0 10px;
+    justify-content: center;
+    z-index: -1;
+  }
+  
+  .input_main {
+    width: 215.71px;
+    height: 44px;
+    border: 1px solid #aaa;
+    border-radius: 4px;
+    background-color: #fff;
+    padding: 9px 12px;
+    margin-top: -4px;
+    margin-right: 2px;
+    text-align: center;
+    z-index: -1;
+  }
+  
+  .text_field {
+    position: relative;
+  }
+  
+  .absolute_unit {
+    position: absolute;
+    top: -15px;
+    left: 15px;
+    font-size: 10px;
+    background-color: #fff;
+    padding: 3px;
+  }
+  
+  .bitqin {
+    position: absolute;
+    text-align: center;
+    top: 10px;
+    left: 50px;
+    font-size: 10px;
+  }
+  
+  .action_container {
+    text-align: center;
+    margin-top: 10px;
+  }
+  #btn_sell {
+    border: 1px solid #f2f2f2;
+    background-color: #f2f2f2;
+    border-radius: 4px;
+    color: #5f6368;
+    font-size: 12px;
+    margin: 11px 4px;
+    padding: 0 16px;
+    line-height: 27px;
+    height: 36px;
+    min-width: 54px;
+    text-align: center;
+    cursor: pointer;
+    user-select: none;
+    width: 155px;
+    outline: none;
+  }
+  
+  #btn_buy {
+    background-color: #2585fd;
+    border: 1px solid #2585fd;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 12px;
+    margin: 11px 4px;
+    padding: 0 16px;
+    line-height: 27px;
+    height: 36px;
+    min-width: 54px;
+    text-align: center;
+    cursor: pointer;
+    user-select: none;
+    width: 155px;
+    outline: none;
+  }
+  
+  .buy_content {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 14px;
+    color: gray;
+    direction: rtl;
+  }
+  
+  .buy_content h2 {
+    font-size: 14px;
+    font-weight: 300;
+    color: hsla(0, 0%, 100%, 0.1);
+    background: -webkit-gradient(
+      linear,
+      left top,
+      right top,
+      from(#222),
+      to(#222),
+      color-stop(0.5, #fff)
+    );
+    background-size: 125px 100%;
+    background-repeat: no-repeat;
+    background-color: #222;
+    background-clip: text;
+    animation-iteration-count: infinite;
+    animation-name: identifier;
+    animation-duration: 4s;
+  }
+  @keyframes identifier {
+    0% {
+      background-position: 0 0;
+    }
+  
+    100% {
+      background-position: 100% 0;
+    }
+  }
+  
+  .contact a {
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 500;
+    color: #2485fd;
+    margin-top: -2px;
+  }
+  .fa-phone {
+    height: 12px;
+    width: 14px;
+    color: #276da7;
+    transform: scaleX(-1);
+  }
+  
+  @media only screen and (max-width: 1200px) {
+    .bit_main_container {
+      margin: 120px 0 0 0;
+    }
+    .input_main {
+      width: 180.77px;
+    }
+  }
+  @media only screen and (max-width: 768px) {
+    .bit_main_container {
+      margin: 55px auto 0 auto;
+    }
+    .logo img {
+      width: 200px;
+      height: 73.69px;
+    }
+    .input_main {
+      width: 142.64px;
+    }
+  }
+  @media screen and (max-width: 575px) {
+    .bit_main_container {
+      margin: 55px auto 0 auto;
+    }
+    .logo img {
+      width: 200px;
+      height: 73.69px;
+    }
+    .input_main {
+      padding: 9px 12px;
+    }
+  }

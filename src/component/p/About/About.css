@@ -1,0 +1,188 @@
+.parent-container-box-about-page {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  .container-box-about-page {
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 7px;
+    box-shadow: 0 2px 8px rgb(0 0 0 / 10%);
+    padding: 0px 15px;
+    background-color: rgb(255, 255, 255);
+    max-width: 1220px;
+    display: flex;
+    justify-content: space-between;
+    height: 628px;
+    position: relative;
+  }
+  .right-box,
+  .left-box {
+    width: 50%;
+  }
+  .li-title-head {
+    font-size: 15px;
+    margin-top: 10px;
+    color: #2585fc;
+  }
+  .ul-contact-us {
+    font-size: 14px;
+    text-align: right;
+    list-style-type: none;
+    padding-right: 20px;
+  }
+  .bb6473 {
+    color: blue;
+  }
+  .text-right-box {
+    text-align: right;
+    font-size: 13px;
+    margin-top: 25px;
+  }
+  .image-map-about-wage {
+    max-width: 100%;
+  }
+  .col-lg-7 {
+    margin-top: 25px;
+  }
+  .btn-back-to-page-home {
+    position: absolute;
+    top: 93%;
+    right: 3%;
+  }
+  .btn-back {
+    font-size: 15px;
+    color: blue;
+  }
+  
+  @media only screen and (max-width: 878px) {
+    .container-box-about-page {
+      height: 653px;
+    }
+  }
+  @media (max-width: 768px) {
+    * {
+      font-size: 13px;
+    }
+  }
+  
+  @media only screen and (max-width: 689px) {
+    .container-box-about-page {
+      height: 679px;
+    }
+  }
+  @media only screen and (max-width: 600px) {
+    .container-box-about-page {
+      height: auto;
+    }
+    .container-box-about-page {
+      flex-direction: column-reverse;
+    }
+    .right-box,
+    .left-box {
+      width: 100%;
+    }
+    .btn-back-to-page-home {
+      position: absolute;
+      top: 97%;
+      right: 10%;
+    }
+    .ul-contact-us {
+      font-size: 14px;
+      text-align: right;
+      list-style-type: none;
+      padding-right: 20px;
+      margin-bottom: 30px;
+    }
+  }
+  /* .title-blue-header-text{
+   
+      text-align: right;
+      font-size: 18px;
+      color: #fff;
+      font-weight: 300;
+      padding: 0 6px;
+  }
+  blockquote, body, dd, dl, fieldset, figure, h1, h2, h3, h4, h5, h6, hr, legend, ol, p, pre, ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+  }
+  h1 {
+      font-size: 20px;
+  }
+  *, :after, :before {
+      box-sizing: border-box;
+      font-family: IRANSans,"sans-serif";
+  }
+  *, :after, :before {
+      box-sizing: inherit;
+  }
+  user agent stylesheet
+  h1 {
+      display: block;
+      font-size: 2em;
+      margin-block-start: 0.67em;
+      margin-block-end: 0.67em;
+      margin-inline-start: 0px;
+      margin-inline-end: 0px;
+      font-weight: bold;
+  }
+  .text-right {
+      text-align: right;
+  }
+  body {
+      user-select: none;
+  }
+  body {
+      font-family: IRANSans,"sans-serif";
+      min-width: 320px;
+      direction: rtl;
+  }
+  :root {
+      --animate-duration: 1s;
+      --animate-delay: 1s;
+      --animate-repeat: 1;
+  }
+  :root {
+      --body-bg: linear-gradient(135deg,#f5f7fa,#c3cfe2);
+      --msger-bg: transparent;
+      --border: 2px solid #ddd;
+      --left-msg-bg: #ececec;
+      --right-msg-bg: #237ced;
+  }
+  html {
+      -webkit-tap-highlight-color: transparent;
+      scroll-behavior: smooth;
+  }
+  *, :after, :before {
+      box-sizing: border-box;
+      font-family: IRANSans,"sans-serif";
+  }
+  *, :after, :before {
+      box-sizing: inherit;
+  }
+  *, :after, :before {
+      box-sizing: border-box;
+      font-family: IRANSans,"sans-serif";
+  }
+  *, :after, :before {
+      box-sizing: inherit;
+  }
+  
+  
+
+   */
+   .bluee{
+     background-color: rgb(53,144,255);
+     display: flex;
+   
+     text-align: right;
+     font-size: 18px;
+    color: #fff;
+    font-weight: 300;
+    padding: 0 6px;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: IRANSans,"sans-serif";
+    
+    }
